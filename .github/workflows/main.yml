@@ -10,11 +10,7 @@ on:
 jobs:
   build:
     name: Build and Push
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x, 18.x],
-        platform: [linux/amd64, linux/arm64, linux/arm]
+    runs-on: ubuntu-22.04
     steps:
     - name: Checkout
       uses: actions/checkout@v2
