@@ -1,5 +1,5 @@
 
-FROM  node:alpine as build
+FROM --platform=arm64 node:18-alpine as build
 WORKDIR /build
 
 
@@ -13,7 +13,7 @@ RUN npm run build
 
 
 
-FROM  node:alpine as runner
+FROM --platform=arm64 node:18-alpine as runner
 
 WORKDIR /app
 
