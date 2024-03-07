@@ -23,7 +23,7 @@ user(userNameSpace);
 user(partnerNameSpace);
 
 app.get('/', (req, res) => {
-  res.send('Hello World! from v4 from git hub actions 🚀');
+  res.send('Hey Sonu Testing 123 🚀');
 });
 
 app.get('/health', (req, res) => {
